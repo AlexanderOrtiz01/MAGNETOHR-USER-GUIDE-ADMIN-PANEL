@@ -1,0 +1,54 @@
+/* Estilo personalizado para el título MAGNETOHR */
+h1[data-page-title] {
+  background: linear-gradient(90deg, #0D4269 0%, #0D4269 77%, #4D4D4D 77%, #4D4D4D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h1 {
+  background: linear-gradient(90deg, #0D4269 0%, #0D4269 77%, #4D4D4D 77%, #4D4D4D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Estilo para el título del header */
+.site-title span {
+  background: linear-gradient(90deg, #4D4D4D 0%, #4D4D4D 58%, #0D4269 58%, #0D4269 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* Ocultar Sinopsis de la tabla de contenidos */
+li[style*="--depth: 0"] a[href="#_top"] {
+  display: none !important;
+}
+
+li[style*="--depth: 0"]:has(a[href="#_top"]) {
+  display: none !important;
+}
+
+/* Animación de carga para imágenes */
+img {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  min-height: 200px;
+}
+
+img[complete="true"] {
+  animation: none;
+  background: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
